@@ -1,0 +1,56 @@
+
+
+.banner {
+    padding: 6em 1em 2em 1em;
+    background: linear-gradient(to bottom, rgba(#000, .55) 55%, rgba(#fff, .4)), url("../imgs/banner/B1.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    text-align: justify;
+    border-top: .3rem solid $main-color;
+
+    .banner-wrapper {
+        width: 70%;
+        margin-top: -2.5rem;
+        margin-left: auto;
+        min-height: auto;
+        padding-bottom: 1.5rem;
+
+        .b-title {
+            font-size: 3em;
+            font-weight: 400;
+            text-align: justify;
+            margin-bottom: 2rem;
+            color: #00dafd;
+            line-height: 2;
+        }
+        p {
+            color: #eaf6ff;
+            font-size: 1.3rem;
+            font-weight: 400;
+            margin-bottom: 2rem;
+            text-align: justify;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: $main-color;
+            color: #fff;
+            font-size: 1.15rem;
+            line-height: 1.5;
+            text-align: center;
+            vertical-align: middle;
+            text-decoration: none;
+            border: 1px solid transparent;
+            outline: none;
+            user-select: none;
+            transition: background-color .3s ease-in-out, color .3 ease-in-out, border-calor .3 ease-in-out;
+
+            &:hover {
+                background-color: transparent;
+                border-color: $main-color;
+                color: $main-color;
+            }
+        }
+    }
+}
