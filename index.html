@@ -10,7 +10,8 @@
 
     <!-- lien mon fichier css-->
     <link rel="stylesheet" href="assets/stylesheets/screen.css">
-     <!-- ici il me faudra un lien externe pour les icones.-->
+     <!-- celui-ci est lien externe pour les icones.-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
@@ -21,26 +22,132 @@
                  <a href="#" class="logo"><img src="assets/imgs/mdv.JPG" alt="Le logo" class="img"></a>  <!--c'est le logo-->
                 <nav class="navigation"> <!--début de navigation-->
                     <ul class="nav-links">
-                        <li class="nav-item"><a href="#" class="nav-link active">Accueil</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link active">Accueil <i class="fas fa-home"></i></a></li>
+                        
+                        <li class="nav-item submenu"> <!--Sous lien menu-->
+                            <a href="#" class="nav-link">Blog <i class="fas fa-comments"></i></a>
+
+                            <ul class="dropdown-menu"> <!--le dropdown menu-->
+                                <li class="nav-item"><a href="#" class="nav-link active">Blog<i class="fas fa-comment"></i></a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Single Blog<i class="fas fa-newspaper"></i></a></li>
+                            </ul> <!-- fin de dropdown menu-->
+                        </li> <!--Fin du Sous lien menu-->
+                        <li class="nav-item"><a href="#" class="nav-link">Contact <i class="fas fa-envelope"></i></a></li>
                     </ul>
                 </nav> <!--la fin de navigation-->
              </div>  
          </div>
      </header> <!--fin de la section header-->
-    
+
      <!--La section banner (barnière)-->
      <section class="banner" id="banner">
          <div class="container">
              <div class="banner-wrapper">
-                 <h1 class="b-title">Nous sommes là pour vous ! </h1>
-                 <p>Ne cherchez pas plus loin, la solution est tout juste dans la porte d'à côté;
-                    vous êtes dans le besoin d'un site ou d'une application pour votre Busness, vous essayez mais n'y arrivez pas;
-                  laissez faire les pros</p>
-                  <a href="#" class="btn"> Nous découvrir !</a>
+                 <h1 class="b-title">Nous vous écoutons ! </h1>
+                 <p>Vous êtes dans le besoin d'un site ou d'une application pour votre Busness, vous essayez mais n'y arrivez pas;
+                  laissez faire les pros. </p>
+                  <a href="#" class="btn btn-big btn-outline"> Nous découvrir !</a>
              </div>
          </div>
      </section> <!--Fin de la section banner (barnière)-->
+
+<!--La section card ou card section-->
+     <section class="card py-70" id="card">
+        <div class="container">
+            <div class="card-wrapper">
+                <article>
+                    <header>
+                        <h4>La super league va t-il ruiner le football ?</h4>
+                    </header>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quam sint ipsum, placeat amet illo enim laboriosam commodi laudantium minus vero necessitatibus soluta veritatis ullam voluptate nam quae adipisci nihil? </p>
+                        <footer><a href="" class="btn btn-mini btn-outline">Voir plus<i class="fas fa-angle-double-right"></i></a></footer>
+                </article>
+           <article>
+                    <header>
+                        <h4>La super league va t-il ruiner le football ?</h4>
+                    </header>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, voluptatibus alias iste maxime incidunt pariatur. Harum alias dolore odio illo eius, molestias, nulla expedita nemo sapiente beatae, commodi placeat numquam? </p>
+                        <footer><a href="" class="btn btn-mini btn-outline">Voir plus<i class="fas fa-angle-double-right"></i></a></footer>
+                </article>
+            <article>
+                    <header>
+                        <h4>La super league va t-il ruiner le football ?</h4>
+                    </header>
+                        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, vel. Esse distinctio quasi placeat nostrum explicabo natus eius expedita commodi, ad fuga. Eum natus ea eligendi exercitationem quod voluptate earum? </p>
+                        <footer><a href="" class="btn btn-mini btn-outline">Voir plus<i class="fas fa-angle-double-right"></i></a></footer>
+                </article>
+            </div>
+        </div>
+     </section> <!--End Card section-->
+
+     <!--debut de la section mentors-->
+     <section class="mentors py-70 bg-bw" id="mentors">
+        <div class="container">
+            <div class="mentors-wrapper">
+                <header class="section-header"> <!--Entête de Mentors (Titre + la Déscription)-->
+                    <h1 class="main-title">Personnels à votre disposition</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, molestiae dolores omnis accusamus commodi autem harum tempore expedita doloremque hic minima incidunt quos sit similique distinctio labore, et vitae amet?</p>
+                </header> <!--End header Mentors-->
+
+                <div class="mentors-container row"> <!--Contenaire de Mentors-->
+                    <div class="mentor-box px-15">
+                        <div class="box">
+                            <div class="mentor-img"><img src="assets/imgs/mentors/m1.jpg" alt="Mentor" class="img img-rounded"></div>
+                            <h4 class="l4-title">Giresse</h4>
+                            <p>Développeur Frontend</p>
+                        </div>
+                    </div>
+                    <div class="mentor-box px-15">
+                        <div class="box">
+                            <div class="mentor-img"><img src="assets/imgs/mentors/m4.jpg" alt="Mentor" class="img img-rounded"></div>
+                            <h4 class="l4-title">Viviane</h4>
+                            <p>Développeur Frontend</p>
+                        </div>
+                    </div>
+                    <div class="mentor-box px-15">
+                        <div class="box">
+                            <div class="mentor-img"><img src="assets/imgs/mentors/m1.jpg" alt="Mentor" class="img img-rounded"></div>
+                            <h4 class="l4-title">Miracle</h4>
+                            <p>Développeur Frontend</p>
+                        </div>
+                    </div>
+                    <div class="mentor-box px-15">
+                        <div class="box">
+                            <div class="mentor-img"><img src="assets/imgs/mentors/m4.jpg" alt="Mentor" class="img img-rounded"></div>
+                            <h4 class="l4-title">Pémo</h4>
+                            <p>Développeur Frontend</p>
+                        </div>
+                    </div>
+                </div> <!--End Mentors Container-->
+            </div>
+        </div>
+     </section> <!--End section mentors-->
+
+        <!--debut de la section footer-->
+        <footer class="footer py-70 bg-bw" id="footer">
+            <div class="container">
+                <div class="footer-blocks row">
+                    <div class="footer-block f-links px-15"> <!--debut de footer links-->
+                        <ul>
+                            <li><a href="#">A proppos de nous</a></li>
+                            <li><a href="#">Nous écrire</a></li>
+                            <li><a href="#">Politique de Confidentialité</a></li>
+                        </ul>
+                    </div><!--End footer links-->
+                    <div class="footer-block s-links px-15"> <!--debut de social links-->
+                        <ul>
+                            <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div> <!--End social links-->
+
+                    <div class="copyright" id="copyright">
+                        &COPY; | Giresse Miracle <script>document.write(new Date().getFullYear());</script> all rights reserved
+                    </div>
+                </div>
+            </div>
+        </footer> <!--End section footer-->
 </body>
 </html>

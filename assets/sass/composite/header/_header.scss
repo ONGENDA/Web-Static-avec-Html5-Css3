@@ -8,7 +8,7 @@ header.header {
     padding-top: 1rem;
     border-top: 0.5rem solid $main-color;
     background-color: transparent;
-    color: #eaf6ff;
+    color: $break-white;
 
     .header-container {
         display: flex;
