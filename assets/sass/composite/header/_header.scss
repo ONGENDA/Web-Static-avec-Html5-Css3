@@ -1,4 +1,3 @@
-
 header.header {
     position: absolute;
     left: 0;
@@ -16,10 +15,28 @@ header.header {
         align-items: center;
     }
 
+        @media (max-width: $md) {
+            &.show {
+                .navigation {
+                    transform: translateX(0);
+                    visibility: visible;
+                }
+            }
+        }
+
     .logo {
+        @media (max-width: $md) {
+            position: absolute;
+            left: 50px;
+            top: 15px;
+        }
+
         img {
             max-width: 100px;
         }
     }
-@import "navigation";
+    
+    @import "hamburger";
+    
+    @import "navigation";
 }
