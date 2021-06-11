@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Autheur" content="Giresse Miracle Ongendangenda">
+    <title>Giresse Miracle | Accueil </title>
+    <link rel="icon" href="assets/imgs/gm.icon..JPG">
+
+    <!-- lien mon fichier css-->
+    <link rel="stylesheet" href="assets/stylesheets/screen.css">
+     <!-- celui-ci est lien externe pour les icones.-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!--La section header-->
+  <header class="header light-header" id="header">
+         <div class="container">
+             <div class="header-container">
+                 <a href="index.html" class="logo"><img src="assets/imgs/mdv.JPG" alt="Le logo" class="img"></a>  <!--c'est le logo-->
+                <nav class="navigation"> <!--début de navigation-->
+                    <ul class="nav-links">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Accueil <i class="fas fa-home"></i></a></li>
+                        
+                        <li class="nav-item submenu"> <!--Sous lien menu-->
+                            <a href="#" class="nav-link">Blog <i class="fas fa-comments"></i></a>
+
+                            <ul class="dropdown-menu"> <!--le dropdown menu-->
+                                <li class="nav-item"><a href="blog.html" class="nav-link active">Blog<i class="fas fa-comment"></i></a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Single Blog<i class="fas fa-newspaper"></i></a></li>
+                            </ul> <!-- fin de dropdown menu-->
+                        </li> <!--Fin du Sous lien menu-->
+                        <li class="nav-item"><a href="#" class="nav-link">Contact <i class="fas fa-envelope"></i></a></li>
+                    </ul>
+                </nav> <!--End navigation-->
+
+                <a href="#" class="hamburger" id="hamburger"><i class="fas fa-bars"></i></a> <!--reponsive menu icon-->
+             </div>  
+         </div>
+     </header> <!--fin de la section header-->
+
+     <!--Blog Intro-->
+     <section class="blog-intro pt-120" id="blog-intro">
+        <div class="container">
+            <div class="intro">
+                <h1 class="main-title">Lorem ipsum dolor sit amet consectetur.</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius aperiam dolorum repudiandae illum excepturi voluptatibus! Molestiae, iure. Totam, incidunt? Temporibus amet culpa vel blanditiis molestiae ratione repellendus, ullam eaque repellat.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut excepturi minus ipsa totam quae recusandae dignissimos cupiditate nam sequi impedit consequuntur quas incidunt dolor magnam voluptatibus, facere maxime, ipsam minima.
+                </p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, ipsa adipisci tenetur dolores rerum doloremque modi earum laborum a mollitia laudantium tempore, eaque accusamus eos sequi ducimus commodi deleniti cumque!</p>
+            </div>
+        </div>        
+     </section> <!-- End Blog Intro-->
+
+     <!--Blog category area-->
+     <section class="blog-category py-70" id="blog-category">
+        <div class="container">
+            <div class="category-wrapper row">
+                <div class="category-post px-15">
+                    <img src="assets/imgs/blog/cat-post/post1.JPG" alt="Post" class="img">
+                    <div class="category-details">
+                        <div class="category-text">
+                            <a href=""><h5>Lorem, ipsum.</h5></a>
+                            <div class="border-line"></div>
+                            <p>Lorem consectetur.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-post px-15">
+                    <img src="assets/imgs/blog/cat-post/post2.JPG" alt="Post" class="img">
+                    <div class="category-details">
+                        <div class="category-text">
+                            <a href=""><h5>Lorem, ipsum.</h5></a>
+                            <div class="border-line"></div>
+                            <p>Lorem consectetur.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-post px-15">
+                    <img src="assets/imgs/blog/cat-post/post3.JPG" alt="Post" class="img">
+                    <div class="category-details">
+                        <div class="category-text">
+                            <a href=""><h5>Lorem, ipsum.</h5></a>
+                            <div class="border-line"></div>
+                            <p>Lorem consectetur.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section> <!-- End Blog category area-->
+
+        <!--debut de la section footer-->
+        <footer class="footer py-70 bg-bw" id="footer">
+            <div class="container">
+                <div class="footer-blocks row">
+                    <div class="footer-block f-links px-15"> <!--debut de footer links-->
+                        <ul>
+                            <li><a href="#">A proppos de nous</a></li>
+                            <li><a href="#">Nous écrire</a></li>
+                            <li><a href="#">Politique de Confidentialité</a></li>
+                        </ul>
+                    </div><!--End footer links-->
+                    <div class="footer-block s-links px-15"> <!--debut de social links-->
+                        <ul>
+                            <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div> <!--End social links-->
+
+                    <div class="copyright" id="copyright">
+                        &COPY; | Giresse Miracle <script>document.write(new Date().getFullYear());</script> all rights reserved
+                    </div>
+                </div>
+            </div>
+        </footer> <!--End section footer-->
+
+        <!--Javascript loading(chargé)-->
+        <script type="text/javascript" src="assets/js/script.js"></script>
+        
+</body>
+</html>
