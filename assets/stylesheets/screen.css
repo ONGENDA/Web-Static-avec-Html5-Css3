@@ -97,6 +97,13 @@ h, .h6 {
   line-height: 1;
   color: #ffa400;
 }
+@media (max-width: 992px) {
+  .main-title {
+    font-size: 2em;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+}
 
 .l4.title {
   font-family: Times, serif;
@@ -118,6 +125,18 @@ h, .h6 {
     font-size: 2em;
     line-height: 1.2;
     margin-bottom: 1rem;
+  }
+}
+
+.section-header p {
+  color: #7a7b7b;
+}
+@media (max-width: 992px) {
+  .section-header {
+    max-width: 90%;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -214,10 +233,6 @@ ul, ol, li, dl {
 
 .bg-bw {
   background-color: #eaf6ff;
-}
-
-.section-header p {
-  color: #7a7b7b;
 }
 
 .btn {
@@ -494,6 +509,20 @@ header.header nav.navigation .nav-links .nav-item.submenu a.nav-link:hover, head
   width: 25%;
   flex: 0 0 25%;
 }
+@media (max-width: 992px) {
+  #mentors .mentors-wrapper .mentors-container .mentor-box {
+    width: 50%;
+    flex: 0 0 50%;
+  }
+}
+@media (max-width: 768px) {
+  #mentors .mentors-wrapper .mentors-container .mentor-box {
+    width: 90%;
+    flex: 0 0 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 #mentors .mentors-wrapper .mentors-container .box {
   text-align: center;
   border-radius: .25rem;
@@ -513,6 +542,15 @@ header.header nav.navigation .nav-links .nav-item.submenu a.nav-link:hover, head
   width: 50%;
   flex: 0 0 50%;
 }
+@media (max-width: 992px) {
+  #articles .articles-container article {
+    width: 100%;
+    flex: 0 0 100%;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(255, 164, 0, 0.25);
+  }
+}
 #articles .articles-container article header h4 {
   font-weight: 400;
   color: #ffa400;
@@ -521,10 +559,21 @@ header.header nav.navigation .nav-links .nav-item.submenu a.nav-link:hover, head
   color: #7a7b7b;
   padding: 1rem 0;
 }
+@media (max-width: 992px) {
+  #articles .articles-container article p {
+    padding: 0;
+  }
+}
 
 #footer .footer-blocks .footer-block {
   width: 50%;
   flex: 0 0 50%;
+}
+@media (max-width: 768px) {
+  #footer .footer-blocks .footer-block {
+    width: 100%;
+    flex: 0 0 100%;
+  }
 }
 #footer .footer-blocks .f-links li {
   margin-bottom: 1rem;
