@@ -45,6 +45,15 @@ h, .h6 {
      font-weight: 600;
 
 }
+
+.widget-title {
+    padding: 8px 0;
+    margin-bottom: 30px;
+    background-color: $main-color;
+    color: $white;
+    font-size: 18px;
+    line-height: 2;
+}
 .b-title {
     font-size: 3em;
     font-weight: 400;

@@ -12,6 +12,8 @@
 
 @import "img";
 
+@import "form";
+
 .fas, .fab, .far, .fa {
     margin: 0 .25rem;
     vertical-align: middle;
@@ -20,4 +22,12 @@
 
 .bg-bw {
     background-color: $break-white;
+}
+
+.t-center {
+    text-align: center !important;
+}
+
+.fw-300 {
+    font-weight: 300 !important;
 }
