@@ -39,11 +39,17 @@ h, .h6 {
 }
 
 .l4.title {
-     font-family: Times, serif;
+     font-family: $piazzo, Times;
      color: $main-color;
      font-size: 1.2rem;
      font-weight: 600;
 
+}
+.post-title {
+    font-family: $ubuntu, Times;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: $sec-color;
 }
 
 .widget-title {
