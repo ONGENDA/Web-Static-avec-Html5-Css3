@@ -1,6 +1,6 @@
 .blog-area {
     .area-wrapper {
-
+        font-family: $piazzo, serif;
     }
     
     &.single-post-area {
@@ -45,8 +45,15 @@
             }
 
             @import "navigation-area";
+
+            @import "comment-area";
+
+            @import "comment-form";
         }
     }
+
+    @import "blog-info";
+
     @import "blog-left-sidebar";
 
     @import "blog-right-sidebar";

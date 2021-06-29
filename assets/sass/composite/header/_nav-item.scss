@@ -19,10 +19,11 @@
         @media (max-width: $md) {
             padding: 0.5rem 1rem; 
             color: $sec-color;
-        }
+        } 
         &:hover, &:active, &.active, &.hover {
             color : $main-color;
             border-bottom-color: $main-color;
+            
             @media (max-width: $md) {
                 color: $break-white;
                 border-bottom-color: $break-white;

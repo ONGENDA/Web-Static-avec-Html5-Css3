@@ -1,16 +1,13 @@
 .nav-item.submenu {
- position: relative;
-
-      @media (min-width: $md) {
-         &:hover {
-            .dropdown-menu {
-                opacity: 1;
-                visibility: visible;
-                top: 85%; 
-             }
-          }
-
+    position: relative;
+  
+    &:hover {
+        .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            top: 85%; 
         }
+    }
     .dropdown-menu {
         position: absolute;
         display: block;
@@ -27,16 +24,17 @@
         visibility: hidden;
         transition: all .3s ease-in;
     }
-        a.nav-link {
-            display: block;
-            width: 100%;
-             transition: color .25s ease-in;
 
-             &:hover, &:active, &.active, &.hover {
-                color: $sec-color;
-                border-bottom-color: transparent;
+    a.nav-link {
+        display: block;
+        width: 100%;
+        transition: color .25s ease-in;
 
-            }
+        &:hover, &:active, &.active, &.hover {
+            color: $sec-color;
+            border-bottom-color: transparent;
+
         }
+    }
 
 }

@@ -84,7 +84,7 @@ h5, .h5 {
   font-size: 1.4em;
 }
 
-h, .h6 {
+h6, .h6 {
   font-size: 1.2em;
 }
 
@@ -264,6 +264,16 @@ ul, ol, li, dl {
   border-radius: 50%;
 }
 
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
 .input-group {
   position: relative;
   width: 100%;
@@ -330,6 +340,7 @@ ul, ol, li, dl {
   background-color: transparent;
   border-color: #ffa400;
   color: #ffa400;
+  box-shadow: none;
 }
 
 header.header {
@@ -462,12 +473,10 @@ header.header nav.navigation .nav-links .nav-item .nav-link:hover, header.header
 header.header nav.navigation .nav-links .nav-item.submenu {
   position: relative;
 }
-@media (min-width: 992px) {
-  header.header nav.navigation .nav-links .nav-item.submenu:hover .dropdown-menu {
-    opacity: 1;
-    visibility: visible;
-    top: 85%;
-  }
+header.header nav.navigation .nav-links .nav-item.submenu:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  top: 85%;
 }
 header.header nav.navigation .nav-links .nav-item.submenu .dropdown-menu {
   position: absolute;
@@ -715,6 +724,9 @@ header.header nav.navigation .nav-links .nav-item.submenu a.nav-link:hover, head
   font-weight: 400;
 }
 
+.blog-area .area-wrapper {
+  font-family: "piazzolla", Times, serif;
+}
 .blog-area.single-post-area .post-elt {
   width: 67%;
   flex: 0 0 67%;
@@ -807,6 +819,122 @@ header.header nav.navigation .nav-links .nav-item.submenu a.nav-link:hover, head
 .blog-area.single-post-area .post-elt .navigation-area .details a {
   color: #495454;
   transition: .3s ease-in;
+}
+.blog-area.single-post-area .post-elt .comment-area {
+  border: 1px solid #eee;
+  padding: 50px 30px;
+  margin-top: 50px;
+  text-align: center;
+}
+.blog-area.single-post-area .post-elt .comment-area h4 {
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+}
+.blog-area.single-post-area .post-elt .comment-area .comment-row .single-comment {
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+.blog-area.single-post-area .post-elt .comment-area .comment-row .single-comment .thumb {
+  width: 15%;
+  flex: 0 0 15%;
+}
+.blog-area.single-post-area .post-elt .comment-area .comment-row .single-comment .desc {
+  width: 85%;
+  flex: 0 0 85%;
+}
+.blog-area.single-post-area .post-elt .comment-area .comment-row .single-comment .desc h5 {
+  margin-bottom: 0;
+}
+.blog-area.single-post-area .post-elt .comment-area .comment-row .single-comment .desc h5 a {
+  color: #495454;
+  font-size: 16px;
+}
+.blog-area.single-post-area .post-elt .comment-area .comment-row .single-comment .desc .comment-options .row {
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+.blog-area.single-post-area .post-elt .comment-area .comment-row .single-comment .desc .comment-options small:first-child {
+  font-style: italic;
+  font-size: 11px;
+  font-weight: bold;
+}
+.blog-area.single-post-area .post-elt .comment-area .comment-row .single-comment .desc .comment-options small:last-child {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #eee;
+  transition: .25 ease-in;
+}
+.blog-area.single-post-area .post-elt .comment-area .comment-row .single-comment .desc .comment-options small:last-child:hover {
+  background-color: #ffa400;
+  color: #1100fd;
+  cursor: pointer;
+}
+.blog-area.single-post-area .post-elt .comment-form {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  padding: 45px 30px;
+  background-color: rgba(243, 252, 255, 0.54);
+  text-align: center;
+  border: 1px solid #eee;
+}
+.blog-area.single-post-area .post-elt .comment-form h4 {
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+}
+.blog-area.single-post-area .post-elt .comment-form .form-inline .form-group {
+  width: 50%;
+  padding-right: 1rem;
+}
+.blog-area.single-post-area .post-elt .comment-form .form-control {
+  width: 100%;
+  padding: 8px 20px;
+  font-size: 14px;
+  color: #495454;
+  background-color: #fff;
+  border: 1px solid transparent;
+  transition: .25s ease;
+}
+.blog-area.single-post-area .post-elt .comment-form .form-control:hover, .blog-area.single-post-area .post-elt .comment-form .form-control:focus {
+  border-color: rgba(255, 164, 0, 0.25);
+}
+.blog-area.single-post-area .post-elt .comment-form .form-control:focus {
+  box-shadow: rgba(255, 164, 0, 0.6) 1px 1px 3px;
+}
+.blog-area.single-post-area .post-elt .comment-form textarea.form-control {
+  height: auto;
+  resize: none;
+  font-family: "piazzolla", Times, Times;
+}
+.blog-area.single-post-area .post-elt .comment-form .btn {
+  cursor: pointer;
+}
+.blog-area .blog-info {
+  width: 35%;
+  flex: 0 0 35%;
+  text-align: right;
+}
+.blog-area .blog-info .post-tag {
+  padding-bottom: 1rem;
+}
+.blog-area .blog-info .post-tag a {
+  font: 300 0.9em/1.2 "ubuntu", serif;
+  color: #495454;
+  transition: .25s ease-in;
+}
+.blog-area .blog-info .post-tag a:active, .blog-area .blog-info .post-tag a.active, .blog-area .blog-info .post-tag a.hover, .blog-area .blog-info .post-tag a:hover {
+  color: #ffa400;
+}
+.blog-area .blog-info .blog-meta {
+  padding-left: 0;
+}
+.blog-area .blog-info .blog-meta a {
+  display: inline-block;
+  padding-bottom: 1rem;
+  font-size: .9em;
+  font-weight: 300;
+  line-height: 1;
+  vertical-align: middle;
+  color: #7a7b7b;
 }
 .blog-area .blog-left-side {
   width: 67%;
@@ -939,6 +1067,7 @@ header.header nav.navigation .nav-links .nav-item.submenu a.nav-link:hover, head
   transform: translateY(-50%);
   box-shadow: none;
   z-index: 1;
+  cursor: progress;
 }
 .blog-area .blog-right-side .author-widget h4 {
   margin-top: 1rem;
@@ -1027,6 +1156,79 @@ header.header nav.navigation .nav-links .nav-item.submenu a.nav-link:hover, head
   background-color: #eeeeee;
   height: 1px;
   margin: 30px 0;
+}
+
+.contact-info {
+  align-items: center;
+  min-height: 500px;
+}
+.contact-info .c-info {
+  width: 37%;
+  flex: 0 0 37%;
+}
+@media (max-width: 992px) {
+  .contact-info .c-info {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+}
+.contact-info .c-info .info-item {
+  margin-bottom: 1rem;
+  align-items: center;
+}
+.contact-info .c-info .info-item h6 {
+  margin-bottom: 0;
+}
+.contact-info .c-info .info-item p {
+  margin-bottom: 0;
+  color: #999999;
+}
+.contact-info .c-form {
+  width: 63%;
+  flex: 0 0 63%;
+}
+@media (max-width: 992px) {
+  .contact-info .c-form {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+}
+.contact-info .c-form .left-form, .contact-info .c-form .right-form {
+  width: 50%;
+  flex: 0 0 50%;
+}
+@media (max-width: 768px) {
+  .contact-info .c-form .left-form, .contact-info .c-form .right-form {
+    widows: 100%;
+    flex: 0 0 100%;
+  }
+}
+.contact-info .c-form .form-control {
+  width: 100%;
+  padding: 0.375rem 1rem;
+  font-size: 13px;
+  color: #999999;
+  border: 1px solid #f7f7f7;
+  transition: box-shadow .25s ease;
+  font-family: "ubuntu", serif, Times;
+}
+.contact-info .c-form .form-control:hover, .contact-info .c-form .form-control:focus {
+  border-color: rgba(255, 164, 0, 0.25);
+}
+.contact-info .c-form .form-control:focus {
+  box-shadow: 1px 1px 3px rgba(255, 164, 0, 0.6);
+}
+.contact-info .c-form textarea.form-control {
+  height: 150px;
+  resize: none;
+  font-family: "piazzolla", Times, Times;
+}
+.contact-info .c-form .button-col {
+  width: 100%;
+  text-align: right;
+}
+.contact-info .c-form .button-col .btn {
+  cursor: pointer;
 }
 
 #footer .footer-blocks .footer-block {
