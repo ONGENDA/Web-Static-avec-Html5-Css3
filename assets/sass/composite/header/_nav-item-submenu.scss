@@ -1,13 +1,15 @@
 .nav-item.submenu {
     position: relative;
-  
-    &:hover {
-        .dropdown-menu {
+
+   // @media (min-width: $md){
+        &:hover {
+            .dropdown-menu {
             opacity: 1;
             visibility: visible;
             top: 85%; 
+            }
         }
-    }
+   // }
     .dropdown-menu {
         position: absolute;
         display: block;
